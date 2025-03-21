@@ -1,0 +1,30 @@
+{
+	"name": "lightningcss-plugins-monorepo",
+	"version": "0.0.1",
+	"description": "monorepo for custom lightningcss plugins",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@10.6.4",
+	"engines": {
+		"pnpm": "^10",
+		"node": "^22"
+	},
+	"scripts": {
+		"check": "pnpm -r prepublishOnly && pnpm -r check",
+		"lint": "pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.js'",
+		"format": "pnpm -r format",
+		"precommit": "pnpm format && pnpm lint",
+		"build": "pnpm -r build"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.11",
+		"esbuild": "^0.25.1",
+		"lightningcss": "^1.10.0",
+		"prettier": "^3.1.1",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"eslint": "^9.23.0",
+		"typescript-eslint": "^8.27.0"
+	}
+}

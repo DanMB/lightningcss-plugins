@@ -1,0 +1,26 @@
+{
+	"name": "lightningcss-plugin-env-whitespace-fix",
+	"version": "0.0.1",
+	"description": "Fixes the custom env variables eating up whitespace everywhere",
+	"keywords": [
+		"lightningcss"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/danmb/lightningcss-plugins",
+		"directory": "packages/env-whitespace-fix"
+	},
+	"type": "module",
+	"files": [
+		"index.js"
+	],
+	"scripts": {
+		"format": "prettier --check .",
+		"check": "tsc",
+		"lint": "eslint",
+		"build": "esbuild index.js --bundle --platform=node --target=node16 --packages=external"
+	},
+	"peerDependencies": {
+		"lightningcss": "^1.10.0"
+	}
+}

@@ -2,6 +2,7 @@
 import { resolve, extname } from 'node:path';
 import { optimize } from 'svgo';
 import { readFileSync } from 'node:fs';
+import { console } from 'node:console';
 
 /**
  * @typedef {Object} InlineSvgOptions
@@ -29,8 +30,7 @@ export const inlineSvgVisitor = ({ directory, acceptedExtensions = [] }) => ({
 				const contents = optimize(readFileSync(src, 'utf-8'));
 				svg = contents.data;
 			} catch (e) {
-				console.log('Failed to import and optimize file : ', src);
-				console.error(e);
+				console.log('Failed to import and optimize file : ', src, e);
 			}
 
 			if (svg) {
@@ -48,11 +48,11 @@ export const inlineSvgVisitor = ({ directory, acceptedExtensions = [] }) => ({
 				}
 
 				return {
-					raw: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`
+					raw: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`,
 				};
 			}
-		}
-	}
+		},
+	},
 });
 
 export default inlineSvgVisitor;

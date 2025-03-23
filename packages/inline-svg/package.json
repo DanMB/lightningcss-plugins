@@ -1,9 +1,9 @@
 {
 	"name": "lightningcss-plugin-inline-svg",
 	"version": "0.0.1",
-	"description": "Compile SVG files as inline URL(), plus the ability to add a specific color",
+	"description": "Compile SVG files as inline URL(), with the ability to add a specific color",
 	"keywords": [
-		"lightningcss"
+		"lightningcss-plugin"
 	],
 	"repository": {
 		"type": "git",
@@ -11,18 +11,15 @@
 		"directory": "packages/inline-svg"
 	},
 	"type": "module",
-	"files": [
-		"index.js"
-	],
+	"main": "index.js",
 	"scripts": {
-		"format": "prettier --check .",
-		"check": "tsc",
+		"format": "prettier --check --write .",
 		"lint": "eslint"
-	},
-	"peerDependencies": {
-		"lightningcss": "^1.10.0"
 	},
 	"dependencies": {
 		"svgo": "^3.3.2"
+	},
+	"peerDependencies": {
+		"lightningcss": "^1.10.0"
 	}
 }

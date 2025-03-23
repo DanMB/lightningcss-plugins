@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "Improves on color functions, largely for the purpose of code readability",
 	"keywords": [
-		"lightningcss"
+		"lightningcss-plugin"
 	],
 	"repository": {
 		"type": "git",
@@ -11,14 +11,10 @@
 		"directory": "packages/color-functions"
 	},
 	"type": "module",
-	"files": [
-		"index.js"
-	],
+	"main": "index.js",
 	"scripts": {
-		"format": "prettier --check .",
-		"check": "tsc",
-		"lint": "eslint",
-		"build": "esbuild index.js --bundle --platform=node --target=node16 --packages=external"
+		"format": "prettier --check --write .",
+		"lint": "eslint"
 	},
 	"peerDependencies": {
 		"lightningcss": "^1.10.0"

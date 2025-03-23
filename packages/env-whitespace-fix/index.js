@@ -22,10 +22,10 @@ export const envWhitespaceFix = {
 			property: 'unparsed',
 			value: {
 				...dec.value,
-				value: JSON.parse(replaced)
-			}
+				value: JSON.parse(replaced),
+			},
 		};
-	}
+	},
 };
 
 export default envWhitespaceFix;

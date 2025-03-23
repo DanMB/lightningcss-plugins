@@ -10,21 +10,13 @@
 		"node": "^22"
 	},
 	"scripts": {
-		"check": "pnpm -r prepublishOnly && pnpm -r check",
-		"lint": "pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.js'",
+		"lint": "pnpm -r prepublishOnly && pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.js'",
 		"format": "pnpm -r format",
-		"precommit": "pnpm format && pnpm lint",
-		"build": "pnpm -r build"
+		"precommit": "pnpm format && pnpm lint"
 	},
 	"devDependencies": {
-		"@types/node": "^22.13.11",
-		"esbuild": "^0.25.1",
-		"lightningcss": "^1.10.0",
-		"prettier": "^3.1.1",
-		"typescript": "^5.8.2"
-	},
-	"dependencies": {
+		"@eslint/js": "^9.23.0",
 		"eslint": "^9.23.0",
-		"typescript-eslint": "^8.27.0"
+		"prettier": "^3.1.1"
 	}
 }

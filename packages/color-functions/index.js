@@ -52,12 +52,12 @@ export const colorFunctionsVisitor = {
 						{ type: 'token', value: { type: 'white-space', value: ' ' } },
 						delim,
 						{ type: 'token', value: { type: 'white-space', value: ' ' } },
-						opacity
-					]
-				}
+						opacity,
+					],
+				},
 			};
-		}
-	}
+		},
+	},
 };
 
 export default colorFunctionsVisitor;

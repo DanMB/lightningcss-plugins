@@ -1,6 +1,6 @@
 {
 	"name": "lightningcss-plugin-color-functions",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Improves on color functions, largely for the purpose of code readability",
 	"keywords": [
 		"lightningcss-plugin"

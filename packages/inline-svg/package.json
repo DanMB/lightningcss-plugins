@@ -1,6 +1,6 @@
 {
 	"name": "lightningcss-plugin-inline-svg",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Compile SVG files as inline URL(), with the ability to add a specific color",
 	"keywords": [
 		"lightningcss-plugin"

@@ -11,10 +11,15 @@
 		"directory": "packages/inline-svg"
 	},
 	"type": "module",
-	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
 	"scripts": {
 		"format": "prettier --check --write .",
-		"lint": "eslint"
+		"lint": "eslint",
+		"check": "tsc  --project tsconfig.json --noEmit",
+		"build": "tsc --project tsconfig.json"
 	},
 	"dependencies": {
 		"svgo": "^3.3.2"

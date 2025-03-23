@@ -2,7 +2,7 @@
 import { resolve, extname } from 'node:path';
 import { optimize } from 'svgo';
 import { readFileSync } from 'node:fs';
-import { console } from 'node:console';
+import console from 'node:console';
 
 /**
  * @typedef {Object} InlineSvgOptions
@@ -54,5 +54,3 @@ export const inlineSvgVisitor = ({ directory, acceptedExtensions = [] }) => ({
 		},
 	},
 });
-
-export default inlineSvgVisitor;

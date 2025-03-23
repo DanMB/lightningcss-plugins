@@ -11,10 +11,15 @@
 		"directory": "packages/color-functions"
 	},
 	"type": "module",
-	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
 	"scripts": {
 		"format": "prettier --check --write .",
-		"lint": "eslint"
+		"lint": "eslint",
+		"check": "tsc  --project tsconfig.json --noEmit",
+		"build": "tsc --project tsconfig.json"
 	},
 	"peerDependencies": {
 		"lightningcss": "^1.10.0"

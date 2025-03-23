@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": true,
+		"lib": ["ES2021"],
+		"module": "Node16",
+		"strict": true,
+		"target": "ESNext",
+		"emitDeclarationOnly": true,
+		"declarationDir": "./dist"
+	},
+	"exclude": ["eslint.config.js"]
+}

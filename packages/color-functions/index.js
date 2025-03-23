@@ -59,5 +59,3 @@ export const colorFunctionsVisitor = {
 		},
 	},
 };
-
-export default colorFunctionsVisitor;

@@ -10,9 +10,10 @@
 		"node": "^22"
 	},
 	"scripts": {
-		"lint": "pnpm -r prepublishOnly && pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.js'",
+		"lint": "pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.js'",
 		"format": "pnpm -r format",
-		"precommit": "pnpm format && pnpm lint"
+		"precommit": "pnpm format && pnpm lint",
+		"pub": "pnpm format && pnpm lint && pnpm -r publish"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.23.0",

@@ -1,7 +1,4 @@
 .DS_Store
 node_modules
-dist
-test-results/
 package-lock.json
 yarn.lock
-.env
